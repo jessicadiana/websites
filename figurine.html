@@ -1,0 +1,413 @@
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+          body {
+              font-family: Arial, sans-serif;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 20px;
+          }
+  
+          .product {
+              border: 1px solid #ccc;
+              padding: 10px;
+              margin-bottom: 10px;
+              width: 300px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+          }
+  
+          #cart {
+              width: 500px;
+              border: 3px solid #333;
+              padding: 10px;
+              align-items: center;
+              margin-top: 30px;
+          }
+  
+          #checkout-button {
+              padding: 10px;
+              background-color: #4caf50;
+              color: white;
+              border: none;
+              align-items: center;
+              cursor: pointer;
+              margin-top: 10px;
+          }
+      </style>
+     </head>
+
+ <body>
+
+    <div class="width-100 search-panel">
+        <div class="container">
+          <div class="width-20">
+            <img src="Images/logo-removebg-preview.png" height="50px" width="85px" class="logo">
+            <div class="logo" style="font-size: 10px; color: whitesmoke;" ><h1>Otaku Treasures</h1></div>
+          </div>
+          <div class="width-50">
+            <input class="search-textbox" type="text" Placeholder="Search for products, brand and more">
+            <button class="search-button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="width-350">
+            <ul class="cart-sect">
+              <li>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <a href="log.html">Login & Signup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     <nav class="navbar">
+        <div class="width-100">
+            <div class="container">
+              <ul class="main-menu">
+                <li>
+                  <a href="home.html">Home</a>
+                </li>
+                <li>
+                  <a href="figurine.html">Figurine</a>
+                </li>
+                <li>
+                  <a href="keychain.html">Keychain</a>
+                </li>
+                <li>
+                  <a href="shopping cart.html">Plushies</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+
+ 
+ <div class="width-100 margin-top-50">
+    <div class="container">
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/6th Hokage Susano.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">HATAKE KAKASHI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,549</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('HATAKE KAKASHI', 7549)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Geto.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">GETO SUGURO</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 6,579</span>
+                <span class="product-original-price">Php 9,909</span>
+                <span class="product-discount">40%OFF</span>
+                <button onclick="addToCart('GETO SUGURO', 6579)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Dazai.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">OSAMU DAZAI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,999</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('OSAMU DAZAIu', 7999)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/images (1).jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">  GOJO SATORU</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,549</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('GOJO SATORU', 7549)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Kakashi.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">HATAKE KAKASHI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 27,549</span>
+                <span class="product-original-price">Php 29,554</span>
+                <span class="product-discount">20%OFF</span>
+                <button onclick="addToCart('HATAKE KAKASHI', 27549)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Killua.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">ZOLDYCK KILLUA</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 5,549</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('ZOLDYCK KILLUA', 7549)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Kurama.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">KURAMA</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 6,555</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">20%OFF</span>
+                <button onclick="addToCart('KURAMA', 6555)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Levi.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">ACKERMAN LEVI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,099</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('ACKERMAN LEVI', 7099)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Naruto Sage Mode.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">UZUMAKI NARUTO
+                </a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 4,999</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('UZUMAKI NARUTO', 4999)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/OBITO.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">TOBI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 4,777</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">50%OFF</span>
+                <button onclick="addToCart('TOBII', 47777)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/Naruto.jpg
+                " style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">UZUMAKI NARUTO</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 6,947</span>
+                <span class="product-original-price">Php 9,554</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('UZUMAKI NARUT', 6947)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/nanamia.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">KENTO NANAMI</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,734</span>
+                <span class="product-original-price">Php 9,974</span>
+                <span class="product-discount">30%OFF</span>
+                <button onclick="addToCart('KENTO NANAMI', 7734)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+    <div class="container" style="display: flex; align-items: center; justify-content: center;">
+      <div id="cart" href="shopping cart.html">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Php <span id="total">0</span></p>
+        <button onclick="checkout()" id="checkout-button">Checkout</button>
+    </div></div>
+
+    <script>
+        var cartItems = [];
+        var total = 0;
+
+        function addToCart(productName, price) {
+            cartItems.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        function updateCart() {
+            var cartList = document.getElementById('cart-items');
+            var totalElement = document.getElementById('total');
+
+            cartList.innerHTML = '';
+            total = 0;
+
+            cartItems.forEach(item => {
+                var listItem = document.createElement('li');
+                listItem.textContent = item.name + ' - Php ' + item.price;
+                cartList.appendChild(listItem);
+
+                total += item.price;
+            });
+
+            totalElement.textContent = total;
+        }
+
+        function checkout() {
+    // Simulate the checkout process (you can replace this with your actual checkout logic)
+    if (cartItems.length === 0) {
+        alert('Your cart is empty. Add items before checking out.');
+    } else {
+        alert('Checkout Successful!\nTotal: Php ' + total);
+        cartItems = [];
+        updateCart();
+    }
+}
+    </script>
+
+      
+
+<div class="width-100 footer2-bacbor">
+  <p class="footer2-content">Copyright Â© 2024, At Jd's.com. All Rights Reserved</p>
+</div>
+
+
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #search-container {
+            text-align: center;
+        }
+
+        #search-input {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+
+        #search-button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #search-results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Enter your search">
+        <button onclick="search()" id="search-button">Search</button>
+    </div>
+
+    <div id="search-results"></div>
+
+    <script>
+        function search() {
+            // Get the search query from the input field
+            var searchQuery = document.getElementById('search-input').value;
+
+            // Perform a search (replace this with your search logic)
+            // For simplicity, just displaying the search query in the results
+            var searchResults = document.getElementById('search-results');
+            searchResults.innerHTML = '<p>Search Results for: <strong>' + searchQuery + '</strong></p>';
+        }
+    </script>
+</body>
+</html>

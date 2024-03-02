@@ -1,0 +1,225 @@
+<head>
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+
+<body>
+
+<div class="width-100 search-panel">
+    <div class="container">
+      <div class="width-20">
+        <img src="Images/logo-removebg-preview.png" height="50px" width="85px" class="logo">
+        <div class="logo" style="font-size: 10px; color: whitesmoke;" ><h1>Otaku Treasures</h1></div>
+      </div>
+      <div class="width-50">
+        <input class="search-textbox" type="text" Placeholder="Search for products, brand and more">
+        <button class="search-button">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="width-350">
+        <ul class="cart-sect">
+          <li>
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <a class="head1mr" href="profile.html">Profile</a>
+          </li>
+          <li>
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <a href="login.html">Login & Signup</a>
+          </li>
+          <li>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="shopping cart.html">Cart (0)</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ <nav class="navbar">
+    <div class="width-100">
+        <div class="container">
+          <ul class="main-menu">
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="figurine.html">Figurine</a>
+            </li>
+            <li>
+              <a href="keychain.html">Keychain</a>
+            </li>
+            <li>
+              <a href="plushies.html">Plushies</a>
+            </li>
+            <li>
+              <a href="Product.html">All Products</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</nav>
+
+
+<div class="width-100 margin-top-50">
+<div class="container">
+  <div class="width-25">
+    <div class="product-section">
+      <div class="product-border">
+        <div class="product-img-center">
+          <a href="#">
+            <img class="product-img" src="Images/gojo p.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+          </a>
+        </div>
+        <div>
+          <p class="product-name">
+            <a href="#">Gojo Saturo</a>
+          </p>
+          <span>(5)</span>
+          <p class="product-price">
+            <span class="product-discounted-price">Php 549</span>
+            <span class="product-original-price">Php 2,554</span>
+            <span class="product-discount">70%OFF</span>
+            <button onclick="addToCart('Gojo Satoru', 549)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="width-25">
+        <div class="product-section">
+        <div class="product-border">
+            <div class="product-img-center">
+            <a href="#">
+                <img class="product-img" src="Images/itachi p.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+            </a>
+            </div>
+            <div>
+            <p class="product-name">
+                <a href="#">Uchiha Itachi</a>
+            </p>
+            <span>(5)</span>
+            <p class="product-price">
+                <span class="product-discounted-price">Php 6,579</span>
+                <span class="product-original-price">Php 9,909</span>
+                <span class="product-discount">40%OFF</span>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/nanamia.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">Kento Nanami</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 7,999</span>
+                <span class="product-original-price">Php 9,909</span>
+                <span class="product-discount">30%OFF</span>
+                <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div> <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/naruto p.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">Uzumaki Naruto</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 6,579</span>
+                <span class="product-original-price">Php 9,909</span>
+                <span class="product-discount">40%OFF</span>
+                <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="width-25">
+        <div class="product-section">
+          <div class="product-border">
+            <div class="product-img-center">
+              <a href="#">
+                <img class="product-img" src="Images/kakashi p.jpg" style="height: 280px; width: 200px; padding-bottom: 15px;">
+              </a>
+            </div>
+            <div>
+              <p class="product-name">
+                <a href="#">Hatake Kakashi</a>
+              </p>
+              <span>(5)</span>
+              <p class="product-price">
+                <span class="product-discounted-price">Php 6,579</span>
+                <span class="product-original-price">Php 9,909</span>
+                <span class="product-discount">40%OFF</span>
+                <button>Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product" id="product2">
+        <span>Product 2</span>
+        <button onclick="addToCart('Product 2', 15)">Add to Cart</button>
+    </div>
+
+
+
+      <div id="cart" href="shopping cart.html">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="checkout()" id="checkout-button">Checkout</button>
+    </div>
+
+    <script>
+        var cartItems = [];
+        var total = 0;
+
+        function addToCart(productName, price) {
+            cartItems.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        function updateCart() {
+            var cartList = document.getElementById('cart-items');
+            var totalElement = document.getElementById('total');
+
+            cartList.innerHTML = '';
+            total = 0;
+
+            cartItems.forEach(item => {
+                var listItem = document.createElement('li');
+                listItem.textContent = item.name + ' - $' + item.price;
+                cartList.appendChild(listItem);
+
+                total += item.price;
+            });
+
+            totalElement.textContent = total;
+        }
+
+        
+    </script>
+      
+
+     
+
+<div class="width-100 footer2-bacbor">
+    <p class="footer2-content">Copyright Â© 2024, At Jd's.com. All Rights Reserved</p>
+  </div>
+ 
+    </body>                                                                                                                                                                                                                                                                                                                      
+</html>

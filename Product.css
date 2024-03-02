@@ -1,0 +1,145 @@
+* {
+    margin: 3;
+    padding: 3;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 5;
+    height: 100%;
+}
+
+/*heading*/
+
+.menu-btn {
+    font-size: 23px;
+    cursor: pointer;
+    display: none; 
+}
+
+.navbar {
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    box-shadow: 0 0 14px rgba(252, 249, 249, 0.877);
+}
+
+.navbar .logo h1 {
+    color: lightskyblue;
+    border-bottom: 2px solid#333;
+    font-size: 40px;
+}
+
+.navbar .menu li {
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: #e9e7ee;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li a:hover {
+    border-bottom: 2px solid #f6f;
+    color: aqua;
+}
+
+
+header {
+    background-color: #0d4b50;
+    color: #05222c;
+    text-align: center;
+    background-image: url(Images/maikli.jpg);
+    font-size: 27px;
+    margin-top: 20px;
+}
+
+
+button cart {
+    size: 50px;
+}
+/*content*/
+
+body {
+    background-color:black;
+    border-style: double; margin: 10px; padding: 10px;
+}
+
+.content h1 {
+    font-size: 50px;
+} 
+
+h3{
+    font-size: 20px;
+    color: aqua;
+}
+
+p{
+    font-size: 15px;
+    color: #f6f;
+}
+
+img {
+   
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 60px;
+    position: center;
+    box-shadow: 0 0 14px rgba(14, 178, 219, 0.829);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.figurine {
+    border: 1px solid wheat;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+.keychains {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+div li{
+    display: inline-block;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

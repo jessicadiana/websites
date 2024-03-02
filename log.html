@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+        position: relative;
+        background: transparent;
+        border: 20px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        }
+
+    
+
+        #login-form, #register-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            background-color: rgba(23, 109, 112, 0.527);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #154a5f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="login()">Login</button>
+            <p>Don't have an account?<a href="registration.html" class="register-link">Register</a></p>
+            </form>          
+        </div>
+
+       
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+           
+            var storedUser = localStorage.getItem(username);
+            if (storedUser && JSON.parse(storedUser).password === password) {
+                alert('Login successful!');
+              
+                window.location.href = 'home.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+
+       
+    </script>
+</body>
+</html>
